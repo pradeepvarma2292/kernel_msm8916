@@ -1496,6 +1496,7 @@ static int msm_compr_playback_free(struct snd_compr_stream *cstream)
 		pdata->dec_params[soc_prtd->dai_link->be_id] = NULL;
 	}
 	pdata->is_in_use[soc_prtd->dai_link->be_id] = false;
+
 	kfree(prtd);
 	runtime->private_data = NULL;
 
